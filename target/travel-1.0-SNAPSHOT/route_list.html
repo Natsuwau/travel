@@ -165,6 +165,7 @@
                  */
 
                 //2.列表数据展示
+
                 var route_lis = "";
 
                 for (var i = 0; i < pb.list.length; i++) {
@@ -182,9 +183,9 @@
                         '                            <p class="price_num">\n' +
                         '                                <span>&yen;</span>\n' +
                         '                                <span>'+route.price+'</span>\n' +
-                        '                                <span>起</span>\n' +
+                        // '                                <span>起</span>\n' +
                         '                            </p>\n' +
-                        '                            <p><a href="route_detail.html">查看详情</a></p>\n' +
+                        '                            <p><a href="route_detail.html?rid='+route.rid+'">查看详情</a></p>\n' +
                         '                        </div>\n' +
                         '                    </li>';
                     route_lis += li;
