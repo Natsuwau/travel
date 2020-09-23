@@ -5,6 +5,7 @@ import cn.itcast.travel.domain.Route;
 import cn.itcast.travel.service.RouteService;
 import cn.itcast.travel.service.impl.RouteServiceImpl;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -48,5 +49,23 @@ public class RouteServlet extends BaseServlet {
         PageBean<Route> pb= routeService.pageQuery(cid,currentPage,pageSize);
         writeValue(pb,response);
     }
+
+    /**
+     * 根据id查询一个旅游线路的详细信息
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1.接受id
+        String rid = request.getParameter("rid");
+        //2.调用service查询route对象
+        Route route = routeService.findOne(rid);
+        //3.转为json写回客户端
+        writeValue(route, response);
+    }
+
 
 }

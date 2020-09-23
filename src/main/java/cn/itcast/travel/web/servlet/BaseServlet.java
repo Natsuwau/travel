@@ -22,6 +22,7 @@ public class BaseServlet extends HttpServlet {
             String methodName = uri.substring(uri.lastIndexOf('/') + 1);
 
 
+
             //3.获取方法对象Method
             try {
                 Method method = this.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);

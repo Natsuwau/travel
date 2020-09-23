@@ -10,4 +10,6 @@ public interface RouteService {
     {
         return null;
     }
+//根据Id查询
+   public Route findOne(String rid);
 }
