@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>æ³¨å†Œ</title>
-        <link rel="stylesheet" type="text/css" href="css/common.css">
-        <link rel="stylesheet" href="css/register.css">
-		<!--å¯¼å…¥jquery-->
-		<script src="js/jquery-3.3.1.js"></script>
-    </head>
-    <body>
-    <!--å¼•å…¥å¤´éƒ¨-->
-    <div id="header"></div>
-        <!-- å¤´éƒ¨ end -->
-    	<div style="text-align:center;red:yellow;font-weight:bold;height:150px;padding-top:100px;font-size:30px;">
-    		<h4>æ­å–œï¼Œæ³¨å†ŒæˆåŠŸï¼è¯·ç™»å½•æ‚¨çš„æ³¨å†Œé‚®ç®±è¿›è¡Œæ¿€æ´»æ‚¨çš„è´¦å·ï¼Œæ¿€æ´»åæ‰èƒ½ç™»å½•ã€‚</h4>
-    	</div>
-        <!--å¼•å…¥å°¾éƒ¨-->
-    	<div id="footer"></div>
-    <!--å¯¼å…¥å¸ƒå±€jsï¼Œå…±äº«headerå’Œfooter-->
-    <script type="text/javascript" src="js/include.js"></script>
-    </body>
+<head>
+    <meta charset="GBK">
+    <title>×¢²á</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/register.css">
+    <!--µ¼Èëjquery-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        function countDown(){
+            //»ñÈ¡³õÊ¼Ê±¼ä
+            var time = document.getElementById("Time");
+
+            //»ñÈ¡µ½idÎªtime±êÇ©ÖĞµÄÊı×ÖÊ±¼ä
+            if(time.innerHTML == 0){
+                //µÈÓÚ0Ê±Çå³ı¼ÆÊ±£¬²¢Ìø×ª¸ÃÖ¸¶¨Ò³Ãæ
+                window.location.href="login.html";
+            }else{
+                time.innerHTML = time.innerHTML-1;
+            }
+        }
+        //1000ºÁÃëµ÷ÓÃÒ»´Î
+        window.setInterval("countDown()",1000);
+    </script>
+</head>
+<body>
+<!--ÒıÈëÍ·²¿-->
+<div id="header"></div>
+<!-- Í·²¿ end -->
+<div style="text-align:center;red:yellow;font-weight:bold;height:150px;padding-top:100px;font-size:30px;">
+    <h4>¹§Ï²£¬×¢²á³É¹¦£¡</h4>
+    <h4><p style="color: red;display: inline" id="Time">5</p>Ãëºó×Ô¶¯Ìø×ªÖÁµÇÂ¼Ò³Ãæ</h4>
+
+</div>
+<!--ÒıÈëÎ²²¿-->
+<div id="footer"></div>
+<!--µ¼Èë²¼¾Öjs£¬¹²ÏíheaderºÍfooter-->
+<script type="text/javascript" src="js/include.js"></script>
+</body>
 </html>

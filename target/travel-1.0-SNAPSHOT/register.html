@@ -1,125 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Ê≥®ÂÜå</title>
-        <link rel="stylesheet" type="text/css" href="css/common.css">
-        <link rel="stylesheet" href="css/register.css">
-		<!--ÂØºÂÖ•jquery-->
-		<script src="js/jquery-3.3.1.js"></script>
-    </head>
-	<body>
-	<!--ÂºïÂÖ•Â§¥ÈÉ®-->
-	<div id="header"></div>
-        <!-- Â§¥ÈÉ® end -->
-    	<div class="rg_layout">
-    		<div class="rg_form clearfix">
-    			<div class="rg_form_left">
-    				<p>Êñ∞Áî®Êà∑Ê≥®ÂÜå</p>
-    				<p>USER REGISTER</p>
-    			</div>
-    			<div class="rg_form_center">
-					
-					<!--Ê≥®ÂÜåË°®Âçï-->
-    				<form id="registerForm">
-						<!--Êèê‰∫§Â§ÑÁêÜËØ∑Ê±ÇÁöÑÊ†áËØÜÁ¨¶-->
-						<input type="hidden" name="action" value="register">
-    					<table style="margin-top: 25px;">
-    						<tr>
-    							<td class="td_left">
-    								<label for="username">Áî®Êà∑Âêç</label>
-    							</td>
-    							<td class="td_right">
-    								<input type="text" id="username" name="username" placeholder="ËØ∑ËæìÂÖ•Ë¥¶Âè∑">
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="password">ÂØÜÁ†Å</label>
-    							</td>
-    							<td class="td_right">
-    								<input type="text" id="password" name="password" placeholder="ËØ∑ËæìÂÖ•ÂØÜÁ†Å">
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="email">Email</label>
-    							</td>
-    							<td class="td_right">
-    								<input type="text" id="email" name="email" placeholder="ËØ∑ËæìÂÖ•Email">
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="name">ÂßìÂêç</label>
-    							</td>
-    							<td class="td_right">
-    								<input type="text" id="name" name="name" placeholder="ËØ∑ËæìÂÖ•ÁúüÂÆûÂßìÂêç">
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="telephone">ÊâãÊú∫Âè∑</label>
-    							</td>
-    							<td class="td_right">
-    								<input type="text" id="telephone" name="telephone" placeholder="ËØ∑ËæìÂÖ•ÊÇ®ÁöÑÊâãÊú∫Âè∑">
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="sex">ÊÄßÂà´</label>
-    							</td>
-    							<td class="td_right gender">
-    								<input type="radio" id="sex" name="sex" value="Áî∑" checked> Áî∑
-    								<input type="radio" name="sex" value="Â•≥"> Â•≥
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="birthday">Âá∫ÁîüÊó•Êúü</label>
-    							</td>
-    							<td class="td_right">
-    								<input type="date" id="birthday" name="birthday" placeholder="Âπ¥/Êúà/Êó•">
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left">
-    								<label for="check">È™åËØÅÁ†Å</label>
-    							</td>
-    							<td class="td_right check">
-    								<input type="text" id="check" name="check" class="check">
-    								<img src="checkCode" height="32px" alt="" onclick="changeCheckCode(this)">
-									<script type="text/javascript">
-										//ÂõæÁâáÁÇπÂáª‰∫ã‰ª∂
-										function changeCheckCode(img) {
-											img.src="checkCode?"+new Date().getTime();
-                                        }
-									</script>
-    							</td>
-    						</tr>
-    						<tr>
-    							<td class="td_left"> 
-    							</td>
-    							<td class="td_right check"> 
-    								<input type="submit" class="submit" value="Ê≥®ÂÜå">
-									<span id="msg" style="color: red;"></span>
-    							</td>
-    						</tr>
-    					</table>
-    				</form>
-    			</div>
-    			<div class="rg_form_right">
-    				<p>
-    					Â∑≤ÊúâË¥¶Âè∑Ôºü
-    					<a href="#">Á´ãÂç≥ÁôªÂΩï</a>
-    				</p>
-    			</div>
-    		</div>
-    	</div>
-        <!--ÂºïÂÖ•Â∞æÈÉ®-->
-    	<div id="footer"></div>
-		<!--ÂØºÂÖ•Â∏ÉÂ±ÄjsÔºåÂÖ±‰∫´headerÂíåfooter-->
-		<script type="text/javascript" src="js/include.js"></script>
-    	
-    </body>
+<head>
+	<meta charset="GBK">
+	<title>◊¢≤·</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" href="css/register.css">
+	<!--µº»Îjquery-->
+	<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!--“˝»ÎÕ∑≤ø-->
+<div id="header"></div>
+<!-- Õ∑≤ø end -->
+<div class="rg_layout">
+	<div class="rg_form clearfix">
+		<div class="rg_form_left">
+			<p>–¬”√ªß◊¢≤·</p>
+			<p>USER REGISTER</p>
+		</div>
+		<div class="rg_form_center">
+
+			<!--◊¢≤·±Ìµ•-->
+			<form id="registerForm" method="post"  action="registerServlet">
+				<!--Ã·Ωª¥¶¿Ì«Î«Ûµƒ±Í ∂∑˚-->
+				<input type="hidden" name="action" value="register">
+				<table style="margin-top: 25px;">
+					<tr>
+						<td class="td_left">
+							<label for="username">”√ªß√˚</label>
+						</td>
+						<td class="td_right">
+							<input type="text" id="username" name="username" placeholder="«Î ‰»Î’À∫≈">
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							<label for="password">√‹¬Î</label>
+						</td>
+						<td class="td_right">
+							<input type="text" id="password" name="password" placeholder="«Î ‰»Î√‹¬Î">
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							<label for="email">Email</label>
+						</td>
+						<td class="td_right">
+							<input type="text" id="email" name="email" placeholder="«Î ‰»ÎEmail">
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							<label for="name">–’√˚</label>
+						</td>
+						<td class="td_right">
+							<input type="text" id="name" name="name" placeholder="«Î ‰»Î’Ê µ–’√˚">
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							<label for="telephone"> ÷ª˙∫≈</label>
+						</td>
+						<td class="td_right">
+							<input type="text" id="telephone" name="telephone" placeholder="«Î ‰»Îƒ˙µƒ ÷ª˙∫≈">
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							–‘±
+						</td>
+						<td class="td_right gender">
+							<input type="radio" id="man" name="sex" value="ƒ–" checked> <label for="man">ƒ–</label>
+							<input type="radio" id="woman" name="sex" value="≈Æ"> <label for="woman">≈Æ</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							<label for="birthday">≥ˆ…˙»’∆⁄</label>
+						</td>
+						<td class="td_right">
+							<input type="date" id="birthday" name="birthday" placeholder="ƒÍ/‘¬/»’">
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+							<label for="check">—È÷§¬Î</label>
+						</td>
+						<td class="td_right check">
+							<input type="text" id="check" name="check" class="check">
+							<span><img src="checkCode" alt="" height="30px" onclick="changeCheckCode(this)"></span>
+							<script type="text/javascript">
+								//Õº∆¨µ„ª˜ ¬º˛
+								function changeCheckCode(img) {
+									img.src="checkCode?"+new Date().getTime();
+								}
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<td class="td_left">
+						</td>
+						<td class="td_right check">
+							<!--									<button class="submit" onclick="fff()">◊¢≤·</button>-->
+							<input type="submit" class="submit"></input>
+							<span id="msg" style="color: red;"></span>
+
+						</td>
+					</tr>
+
+
+				</table>
+			</form>
+		</div>
+		<div class="rg_form_right">
+			<p>
+				“—”–’À∫≈£ø
+				<a href="login.html">¡¢º¥µ«¬º</a>
+			</p>
+		</div>
+	</div>
+</div>
+<!--“˝»ÎŒ≤≤ø-->
+<div id="footer"></div>
+<!--µº»Î≤ºæ÷js£¨π≤œÌheader∫Õfooter-->
+<script type="text/javascript" src="js/include.js"></script>
+<script src="js/login.js" type="text/javascript"></script>
+
+
+</body>
 </html>
